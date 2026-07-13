@@ -1,4 +1,5 @@
 import { Code, Terminal, Globe, Shield, Cpu, Cloud } from "lucide-react";
+import PageTransition from "../components/PageTransition";
 
 export default function Skills() {
   const skillCategories = [
@@ -32,7 +33,8 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop animate-fade-in">
+    <PageTransition>
+      <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
       <div className="max-w-5xl mx-auto text-left">
         {/* Title Section */}
         <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-10">
@@ -82,6 +84,7 @@ export default function Skills() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </PageTransition>
   );
 }

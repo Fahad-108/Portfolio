@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Award, ShieldAlert } from "lucide-react";
+import PageTransition from "../components/PageTransition";
 
 export default function Home() {
   return (
-    <div className="w-full animate-fade-in">
+    <PageTransition>
       {/* Hero Section: Modern Bold Editorial */}
       <section className="grid grid-cols-1 lg:grid-cols-12 min-h-[85vh] items-stretch border-b border-white/10" id="home">
         <div className="lg:col-span-7 px-margin-mobile md:px-margin-desktop py-16 md:py-24 flex flex-col justify-center">
@@ -91,6 +92,6 @@ export default function Home() {
           <div className="w-16 h-[2px] bg-white mx-auto mt-10 opacity-50"></div>
         </div>
       </section>
-    </div>
+    </PageTransition>
   );
 }

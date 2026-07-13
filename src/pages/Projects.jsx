@@ -1,4 +1,5 @@
 import { Terminal, Code, Cpu, Database, Award } from "lucide-react";
+import PageTransition from "../components/PageTransition";
 
 export default function Projects() {
   const projects = [
@@ -21,7 +22,8 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low animate-fade-in">
+    <PageTransition>
+      <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
       <div className="max-w-5xl mx-auto text-left">
         {/* Header Block */}
         <div className="mb-16 border-b border-white/10 pb-10">
@@ -77,6 +79,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </PageTransition>
   );
 }

@@ -1,4 +1,5 @@
 import { BookOpen, Code2, MapPin, Target } from "lucide-react";
+import PageTransition from "../components/PageTransition";
 
 export default function About() {
   const infoDetails = [
@@ -25,7 +26,8 @@ export default function About() {
   ];
 
   return (
-    <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest animate-fade-in">
+    <PageTransition>
+      <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
       <div className="max-w-5xl mx-auto text-left">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
@@ -76,6 +78,7 @@ export default function About() {
 
         </div>
       </div>
-    </div>
+      </div>
+    </PageTransition>
   );
 }
