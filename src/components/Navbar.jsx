@@ -65,7 +65,14 @@ export default function Navbar() {
               </NavLink>
             ))}
           </nav>
-          
+          <a
+            href="/Kinza_Anwar_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border border-accent text-accent font-label-caps text-xs font-semibold tracking-widest hover:bg-accent hover:text-white transition-all duration-200"
+          >
+            RESUME
+          </a>
         </div>
 
         {/* Mobile menu trigger */}
