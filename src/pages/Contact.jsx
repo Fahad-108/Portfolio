@@ -78,8 +78,8 @@ export default function Contact() {
     },
     {
       title: "Whatsapp",
-      value: "+92 326 6448706",
-      link: "https://wa.me/923266448706",
+      value: "+92 326 6248706",
+      link: "https://wa.me/923266248706",
       icon: Phone,
     },
     {

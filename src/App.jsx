@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
@@ -28,10 +27,9 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <Router>
-      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-background text-on-surface">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow min-h-[85vh]">
           <AnimatedRoutes />
         </main>
         <Footer />

@@ -29,9 +29,9 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop sticky top-0 z-50 border-b border-white/10 transition-colors duration-300 ${isScrolled
-            ? "py-3 bg-background shadow-sm"
-            : "py-5 bg-background"
+        className={`flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop sticky top-0 z-50 py-4 border-b backdrop-blur-md transition-all duration-300 ${isScrolled
+            ? "bg-background/95 border-white/10 shadow-md"
+            : "bg-background/80 border-transparent"
           }`}
       >
         <Link
@@ -48,22 +48,25 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.name}
-              to={link.path}
-              className={({ isActive }) =>
-                `relative font-label-caps text-xs tracking-widest font-semibold transition-colors duration-200 ${isActive
-                  ? "text-accent after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-full after:bg-accent"
-                  : "text-on-surface-variant hover:text-accent"
-                }`
-              }
-            >
-              {link.name}
-            </NavLink>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={({ isActive }) =>
+                  `relative font-label-caps text-xs tracking-widest font-semibold transition-colors duration-200 ${isActive
+                    ? "text-accent after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-full after:bg-accent"
+                    : "text-on-surface-variant hover:text-accent"
+                  }`
+                }
+              >
+                {link.name}
+              </NavLink>
+            ))}
+          </nav>
+          
+        </div>
 
         {/* Mobile menu trigger */}
         <button
@@ -116,6 +119,16 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <div className="mt-8 pt-6 border-t border-white/10">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full text-center block px-4 py-3 border border-accent text-accent font-label-caps text-xs font-semibold tracking-widest hover:bg-accent hover:text-white transition-all duration-200"
+          >
+            RESUME
+          </a>
+        </div>
       </div>
     </>
   );
