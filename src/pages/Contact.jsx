@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import PageTransition from "../components/PageTransition";
 
-// Custom SVG Icons for Brands
 function GithubIcon({ size = 24, ...props }) {
   return (
     <svg
@@ -108,7 +107,6 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto text-left">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24 items-stretch">
           
-          {/* Left Side: Contact Information */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               <h2 className="font-display-lg text-3xl md:text-4xl text-white mb-6 font-bold leading-tight">
@@ -144,7 +142,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Side: Form */}
           <div className="lg:col-span-7 bg-surface-container-high p-8 md:p-12 border border-white/5 rounded-2xl relative shadow-2xl">
             {isSubmitted ? (
               <div className="absolute inset-0 bg-surface-container-high rounded-2xl flex flex-col items-center justify-center p-8 text-center animate-fade-in">

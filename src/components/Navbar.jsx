@@ -47,7 +47,6 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex items-center gap-8">
             {navLinks.map((link) => (
@@ -75,7 +74,6 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile menu trigger */}
         <button
           onClick={() => setIsMenuOpen(true)}
           className="md:hidden flex items-center p-2 text-white hover:text-accent transition-colors cursor-pointer"
@@ -85,7 +83,6 @@ export default function Navbar() {
         </button>
       </header>
 
-      {/* Sidebar / Drawer Backdrop */}
       {isMenuOpen && (
         <div
           onClick={() => setIsMenuOpen(false)}
@@ -93,7 +90,6 @@ export default function Navbar() {
         />
       )}
 
-      {/* Sidebar / Drawer */}
       <div
         className={`fixed inset-y-0 right-0 z-[60] flex flex-col p-8 bg-surface-container-highest border-l border-white/10 w-[85%] max-w-sm transition-transform duration-300 ease-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}

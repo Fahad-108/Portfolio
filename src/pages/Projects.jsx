@@ -25,7 +25,6 @@ export default function Projects() {
     <PageTransition>
       <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
       <div className="max-w-5xl mx-auto text-left">
-        {/* Header Block */}
         <div className="mb-16 border-b border-white/10 pb-10">
           <span className="font-label-caps text-xs text-accent mb-3 block tracking-widest font-bold">
             ACADEMIC PROJECTS
@@ -35,7 +34,6 @@ export default function Projects() {
           </h2>
         </div>
 
-        {/* Project Card Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <div
@@ -60,7 +58,6 @@ export default function Projects() {
               </div>
 
               <div>
-                {/* Tech tags */}
                 <div className="flex flex-wrap gap-3 mb-8">
                   {project.tags.map((tag, tIdx) => (
                     <span key={tIdx} className="text-xs text-accent/80 font-bold tracking-wider font-label-caps">
@@ -69,7 +66,6 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Footer divider */}
                 <footer className="pt-6 border-t border-white/5 font-label-caps text-[10px] text-on-surface-variant flex items-center gap-3 tracking-widest font-bold">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
                   {project.category}

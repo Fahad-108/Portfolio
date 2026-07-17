@@ -31,7 +31,6 @@ export default function About() {
       <div className="max-w-5xl mx-auto text-left">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* Left Column: Narrative & Philosophy */}
           <div className="lg:col-span-7 space-y-8">
             <div>
               <h2 className="font-display-lg text-3xl md:text-4xl text-white font-bold leading-tight">
@@ -51,13 +50,11 @@ export default function About() {
               </p>
             </div>
 
-            {/* Ethos Quote block */}
             <div className="p-6 bg-accent/5 border-l-2 border-accent rounded-r-xl italic font-medium text-accent font-body-lg text-lg">
               "Always learning, always building, and always improving."
             </div>
           </div>
 
-          {/* Right Column: Structured Key Info Details */}
           <div className="lg:col-span-5 space-y-8 pl-6 border-l border-white/10 py-2 lg:ml-6">
             {infoDetails.map((detail, idx) => (
               <div key={idx} className="group flex items-start gap-4">

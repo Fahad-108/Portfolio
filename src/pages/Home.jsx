@@ -5,7 +5,6 @@ import PageTransition from "../components/PageTransition";
 export default function Home() {
   return (
     <PageTransition>
-      {/* Hero Section: Modern Bold Editorial */}
       <section className="grid grid-cols-1 lg:grid-cols-12 min-h-[85vh] items-stretch border-b border-white/10" id="home">
         <div className="lg:col-span-7 px-margin-mobile md:px-margin-desktop py-16 md:py-24 flex flex-col justify-center">
           <div className="max-w-2xl text-left">
@@ -48,8 +47,6 @@ export default function Home() {
           <div className="absolute inset-0 border-l border-white/10"></div>
         </div>
       </section>
-
-      {/* Narrative Section Preview */}
       <section className="py-20 md:py-24 px-margin-mobile md:px-margin-desktop border-b border-white/10 bg-surface-container-lowest">
         <div className="max-w-5xl mx-auto text-left">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
@@ -80,7 +77,6 @@ export default function Home() {
 
       
 
-      {/* Philosophy: The Developer Ethos */}
       <section className="py-24 md:py-32 accent-gradient text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <span className="font-label-caps text-xs opacity-80 mb-6 block uppercase tracking-[0.3em] font-bold">

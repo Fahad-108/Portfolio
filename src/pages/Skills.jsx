@@ -36,7 +36,6 @@ export default function Skills() {
     <PageTransition>
       <div className="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
       <div className="max-w-5xl mx-auto text-left">
-        {/* Title Section */}
         <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-10">
           <div>
             <h2 className="font-display-lg text-3xl md:text-4xl text-white font-bold">
@@ -51,7 +50,6 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* Competencies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
           {skillCategories.map((category, idx) => (
             <div
